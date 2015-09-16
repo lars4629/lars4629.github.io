@@ -33,17 +33,13 @@ h1 {
    text-indent: 1.5em;
 }
 
-.main:last-child {
-   margin-bottom: 160px;
-}
-
 .italic {
    font-style: italic;
 }
 
 .img {
    float: right;
-   width: 250px;
+   max-width: 250px;
    padding-left: 20px;
    padding-bottom: 15px;
 }
@@ -62,9 +58,9 @@ h1 {
    color: #BCD530;
 }
 
-.original:visited {
+/*.original:visited {
    color: #CCCCCC;
-}
+}*/
 
 #arrow {
    width: 0px;
@@ -73,4 +69,15 @@ h1 {
    border-bottom: 50px #E2D3A4 solid;
    border-left: 125px transparent solid;
    border-right: 125px transparent solid;
+}
+
+.blue {
+   color: #16BBE6;
+}
+
+.saying {
+   display: block;
+   text-align: center;
+   margin-top: 10px;
+   color: #FFCC33;
 }
