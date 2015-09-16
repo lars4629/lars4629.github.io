@@ -1,0 +1,76 @@
+/* this is where all of your CSS styles go */
+h1 {
+   font-family: Georgia;
+   font-weight: regular;
+   font-size: 1.5em;
+   color: #FFCC33;
+   text-align: center;
+   margin: 50px 0 50px 0;
+   
+   border-top: 1px #FFCC33 solid;
+   border-bottom: 1px #FFCC33 solid;
+   
+   padding-top: 20px;
+   padding-bottom: 22px;
+}
+
+#container {
+   width: 650px;
+   margin: auto;
+}
+
+.main {
+   font-family: Georgia;
+   font-size: 1em;
+   color: #7A0019;
+   line-height: 1.5em;
+   letter-spacing: 0em;
+   word-spacing: 0em;
+   text-align: left;
+}
+
+.main + .main {
+   text-indent: 1.5em;
+}
+
+.main:last-child {
+   margin-bottom: 160px;
+}
+
+.italic {
+   font-style: italic;
+}
+
+.img {
+   float: right;
+   width: 250px;
+   padding-left: 20px;
+   padding-bottom: 15px;
+}
+
+.original {
+   color: #16BBE6;
+   text-align: center;
+   display: block;
+}
+
+.original:hover {
+   color: #E98524;
+}
+
+.original:active {
+   color: #BCD530;
+}
+
+.original:visited {
+   color: #CCCCCC;
+}
+
+#arrow {
+   width: 0px;
+   height: 0px;
+   margin: 25px auto 50px auto;
+   border-bottom: 50px #E2D3A4 solid;
+   border-left: 125px transparent solid;
+   border-right: 125px transparent solid;
+}
