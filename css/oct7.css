@@ -8,8 +8,13 @@
  */
 
 @font-face {
-   font-family: ESP;
-   src: url(../fonts/esp/esp.ttf);
+   font-family: "Molot";
+   src: url(../fonts/Molot.otf);
+}
+
+@font-face {
+   font-family: "SS";
+   src: url(../fonts/SourceSansPro-Regular.otf);
 }
 
 header, section, footer, aside, nav, article, figure, figcaption {
@@ -44,7 +49,7 @@ time, mark, audio, video {
 }
 
 p {
-   font-family: "Helvetica", arial, sans-serif;
+   font-family: Georgia;
    color: #333;
    font-size: 14px;
    line-height: 1.4;
@@ -78,8 +83,10 @@ p:last-child {
    text-align: center;
    background: #FFCC33;
    margin-bottom: 2%;
-   padding: 2%;
+   padding: 1%;
    display: none;
+   border-bottom: 2px solid #FFDE7A;
+   border-right: 2px solid #FFDE7A;
 }
 
 h1 {
@@ -89,7 +96,8 @@ h1 {
 
 h1 a {
    text-decoration: none;
-   font-family: ESP;
+   font-family: Molot;
+   text-transform: uppercase;
    font-size: 3em;
    color: black;
 }
@@ -104,21 +112,20 @@ h1 img {
 .control-bar {
    background: rgb( 225, 225, 225 );
    width: 100%;
-   padding: 29px 15px 15px 15px;
+   padding: 15px;
 }
 
 .group {
    display: inline-block;
-   font-family: Helvetica;
+   font-family: SS;
    text-transform: uppercase;
-   color: #7A0019;
+   color: black;
+   margin-right: 25px;
 }
 
 .sort, .filter {
-   padding: 28px 18px 15px 18px;
-   background: url(../images/football-background.png);
-   background-size: 100% 100%;
-   color: white;
+   color: #7A0019;
+   margin-left: 8px;
 }
 
 .sort:hover, .filter:hover {
@@ -148,10 +155,19 @@ h1 img {
 
 .sandbox .mix span {
    text-decoration: none;
-   font-family: Helvetica;
-   color: black;
    font-weight: bold;
    cursor: pointer;
+}
+
+#close {
+   margin-bottom: 345px;
+   margin-left: -15px;
+   height: 15px;
+}
+
+#close-desciption {
+   margin-top: 10px;
+   height: 15px;
 }
 
 #vid {
@@ -164,7 +180,6 @@ h1 img {
    display: block;
    width: 700px;
    margin: auto;
-   margin-top: 10px;
 }
 
 .vgroup {
@@ -172,7 +187,7 @@ h1 img {
 }
 
 .vtag {
-   font-family: Helvetica, Arial, sans-serif;
+   font-family: SS;
    font-size: 18px;
    font-weight: bold;
    width: 200px;
@@ -185,6 +200,7 @@ h1 img {
 }
 
 .vdes {
+   font-family: Georgia;
    font-weight: normal;
    font-size: 14px;
 }
@@ -198,14 +214,26 @@ h1 img {
    margin: 5px;
 }
 
-@media all and (min-width: 420px) {
+footer {
+   font-family: Georgia;
+   font-size: 1em;
+   line-height: 1.2em;
+   margin: 10px 30px;
+}
+
+footer a {
+   text-decoration: none;
+   color: #7A0019;
+}
+
+@media all and (min-width: 450px) {
    .sandbox .mix,
    .sandbox .gap{
       width: 32%;
    }
    
    #group2 {
-      margin-top: 40px;
+      margin-top: 10px;
    }
 }
 
@@ -216,7 +244,7 @@ h1 img {
    }
 }
 
-@media all and (min-width: 1020px) {
+@media all and (min-width: 723px) {
    #group2 {
       margin-top: 0px;
    }

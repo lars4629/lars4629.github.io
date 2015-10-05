@@ -27,6 +27,22 @@ function video( x ) {
    document.getElementById("img2").setAttribute( "onClick", "video('" + related[current][1] + "')");
    document.getElementById("img3").src = "images/" + related[current][2] + ".jpg";
    document.getElementById("img3").setAttribute( "onClick", "video('" + related[current][2] + "')");
-   
-   
 }
+
+function closeVideo() {
+   document.getElementById("vid").style.display = "none";
+   document.getElementById("src").src = "#";
+}
+
+function closeDescription() {
+   document.getElementById("close-desciption").src = "images/open-description.png";
+   document.getElementById("close-desciption").setAttribute( "onClick", "openDescription()");
+   document.getElementById("video-tag").style.display = "none";
+}
+
+function openDescription() {
+   document.getElementById("close-desciption").src = "images/close-description.png";
+   document.getElementById("close-desciption").setAttribute( "onClick", "closeDescription()");
+   document.getElementById("video-tag").style.display = "inherit";
+}
+
