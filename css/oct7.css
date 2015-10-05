@@ -1,0 +1,230 @@
+/*
+ Theme Name: TCF
+ Theme URI: N/A
+ Description: A theme for a modern minimalistic website.
+ Version: 1.0
+ Author: Tyler Larson
+ Author URI: http://tylerllarson.com
+ */
+
+@font-face {
+   font-family: ESP;
+   src: url(../fonts/esp/esp.ttf);
+}
+
+header, section, footer, aside, nav, article, figure, figcaption {
+   display: block;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+   margin: 0px;
+   padding: 0px;
+   border: 0px;
+   font-size: 100%;
+   font: inherit;
+   vertical-align: baseline;
+}
+
+* {
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+p {
+   font-family: "Helvetica", arial, sans-serif;
+   color: #333;
+   font-size: 14px;
+   line-height: 1.4;
+   margin-bottom: 1em;
+}
+
+p:last-child {
+   margin-bottom: 0;
+}
+
+.sandbox {
+   padding: 2% 2% 0;
+   text-align: justify;
+   font-size: 0;
+   background: #7A0019;
+   clear: both;
+}
+
+.sandbox:after {
+   content: '';
+   display: inline-block;
+   width: 100%;
+}
+
+.sandbox .mix, .sandbox .gap {
+   display: inline-block;
+   width: 49%;
+}
+
+.sandbox .mix {
+   text-align: center;
+   background: #FFCC33;
+   margin-bottom: 2%;
+   padding: 2%;
+   display: none;
+}
+
+h1 {
+   text-align: center;
+   margin: 0px auto 15px auto;
+}
+
+h1 a {
+   text-decoration: none;
+   font-family: ESP;
+   font-size: 3em;
+   color: black;
+}
+
+h1 img {
+   height: 60px;
+   position: relative;
+   top: 15px;
+   margin-right: 20px;
+}
+
+.control-bar {
+   background: rgb( 225, 225, 225 );
+   width: 100%;
+   padding: 29px 15px 15px 15px;
+}
+
+.group {
+   display: inline-block;
+   font-family: Helvetica;
+   text-transform: uppercase;
+   color: #7A0019;
+}
+
+.sort, .filter {
+   padding: 28px 18px 15px 18px;
+   background: url(../images/football-background.png);
+   background-size: 100% 100%;
+   color: white;
+}
+
+.sort:hover, .filter:hover {
+   color: #FFCC33;
+   cursor: pointer;
+}
+
+#v1 {
+   background: url(../images/v1-bike_rack_covers.jpg);
+   background-size: 100% 100%;
+}
+
+#v2 {
+   background: url(../images/v2-abi.jpg);
+   background-size: 100% 100%;
+}
+
+.sandbox .mix p {
+   background: rgb( 225, 225, 225 );
+   opacity: .8;
+   padding: 30px 0;
+}
+
+.sandbox .mix p:hover {
+   opacity: 0;
+}
+
+.sandbox .mix span {
+   text-decoration: none;
+   font-family: Helvetica;
+   color: black;
+   font-weight: bold;
+   cursor: pointer;
+}
+
+#vid {
+   text-align: center;
+   margin: 30px auto;
+   display: none;
+}
+
+#video-tag {
+   display: block;
+   width: 700px;
+   margin: auto;
+   margin-top: 10px;
+}
+
+.vgroup {
+   width: 375px;
+}
+
+.vtag {
+   font-family: Helvetica, Arial, sans-serif;
+   font-size: 18px;
+   font-weight: bold;
+   width: 200px;
+   text-align: left;
+}
+
+.vrel {
+   text-align: center;
+   width: 300px;
+}
+
+.vdes {
+   font-weight: normal;
+   font-size: 14px;
+}
+
+#img1, #img2, #img3 {
+   width: 85px;
+   height: 75px;
+   display: inline;
+   background: #FFCC33;
+   padding: 5px;;
+   margin: 5px;
+}
+
+@media all and (min-width: 420px) {
+   .sandbox .mix,
+   .sandbox .gap{
+      width: 32%;
+   }
+   
+   #group2 {
+      margin-top: 40px;
+   }
+}
+
+@media all and (min-width: 700px) {
+   .sandbox .mix,
+   .sandbox .gap{
+      width: 23.5%;
+   }
+}
+
+@media all and (min-width: 1020px) {
+   #group2 {
+      margin-top: 0px;
+   }
+}
+
+@media all and (min-width: 1200px) {
+   .sandbox .mix,
+   .sandbox .gap{
+      width: 18.5%%;
+   }
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="css/oct7.css" />
+      
+      <script type="text/javascript" src="js/jquery.min.js"></script>
+      <script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+      <script type="text/javascript" src="js/oct7-jquery.js"></script>
+		<script type="text/javascript" src="js/oct7.js"></script>
+		
+		<title>Page Title</title>
+         </head>
+   
+   <body>
+      <h1><a href="#"><img src="images/tcf-logo.jpg"/>Training Videos</a></h1>
+      
+      <section id="vid" >
+         <video class="media" controls a height="360px" autoplay id="src">
+            Your browser does not support the video tag.
+         </video>
+         <table id="video-tag" >
+            <tr class="vgroup" >
+               <td class="vtag" >Name: <span id="video-name" class="vdes" ></span></td>
+               <td class="vtag" >Views: <span id="video-views" class="vdes" ></span></td>
+               <td rowspan="3" class="vtag vrel" >Related Videos<br><span id="video-related" class="vdes" ><img id="img1" src="#" /><img id="img2" src="#" /><img id="img3" src="#" /></span></td>
+            </tr>
+            <tr class="vgroup" >
+               <td class="vtag" >Length: <span id="video-length" class="vdes" ></span></td>
+               <td class="vtag" >Useful: <span id="video-usefulness" class="vdes" ></span></td>
+            </tr>
+            <tr class="vgroup" >
+               <td colspan="2" class="vtag" >Description: <span id="video-description" class="vdes" ></span></td>
+            </tr>
+         </table>
+      </section>
+      
+      <section>
+         <div class="control-bar sandbox-control-bar">
+            <div class="group">
+               <label>Sort:</label>
+               <span class="sort active" data-sort="random">Random</span>
+               <span class="sort" data-sort="views:desc">Most Viewed</span>
+               <span class="sort" data-sort="use:desc">Usefulness</span>
+            </div>
+            <div class="group" id="group2" >
+               <label>Filter:</label>
+               <span class="filter active" data-filter="all">All</span>
+               <span class="filter" data-filter=".category-1">General</span>
+               <span class="filter" data-filter=".category-2">Cleaning</span>
+               <span class="filter" data-filter=".category-3">Flips</span>
+               <span class="filter" data-filter=".category-4">Ops</span>
+            </div>
+         </div>
+         <div id="SandBox" class="sandbox">
+            <div class="mix category-1" data-views="25" data-use="3.1" ><span onClick="video('v1-bike_rack_covers')" ><div id="v1" ><p>Bike Rack Covers<br>Views: 25</p></div></span></div>
+            <div class="mix category-1" data-views="12" data-use="2.5" ><span onClick="video('v2-abi')" ><div id="v2" ><p>ABI<br>Views: 12</p></div></span></div>
+            <div class="mix category-2" data-views="54" data-use="4.6" ><span onClick="video('none')" ><div id="v3" ><p>Vacuum Cleaning<br>Views: 54</p></div></a></div>
+            <div class="mix category-2" data-views="36" data-use="2.0" ><span onClick="video('none')" ><div id="v4" ><p>Fake<br>Views: 36</p></div></span></div>
+            <div class="mix category-2" data-views="97" data-use="5" ><span onClick="video('none')" ><div id="v5" ><p>Other<br>Views: 97</p></div></span></div>
+            <div class="mix category-2" data-views="81" data-use="3.7" ><span onClick="video(none)" ><div id="v6" ><p>More<br>Views: 81</p></div></span></div>
+            <div class="gap"></div>
+            <div class="gap"></div>
+         </div>
+      </section>
+   </body>
+
+</html>
