@@ -143,6 +143,16 @@ h1 img {
    background-size: 100% 100%;
 }
 
+#v3 {
+   background: url(../images/v3-vacuum_unclogging.jpg);
+   background-size: 100% 100%;
+}
+
+#v4 {
+   background: url(../images/v4-vacuum_bags.jpg);
+   background-size: 100% 100%;
+}
+
 .sandbox .mix p {
    background: rgb( 225, 225, 225 );
    opacity: .8;
